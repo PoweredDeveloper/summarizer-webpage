@@ -8,18 +8,22 @@
     <title>Summarizer</title>
   </head>
   <body>
-    <main class="bg-stone-400 w-screen h-screen flex justify-center items-center">
-      <div class="flex flex-col gap-6 w-screen items-center justify-center">
-        <h1 class="text-stone-900 text-7xl font-black font-cursive">Summarizer</h1>
-        <span class="text-stone-900 text-xl mb-7 font-serif text-center mx-5">Программа для анализа и выявления терминов в тексте, на PySide6</span>
-        <a href="https://github.com/PoweredDeveloper/Summarizer/releases/download/New/summarizer-setup.exe" class="px-7 py-3 bg-stone-900 rounded-3xl text-white font-semibold text-xl flex flex-col items-center justify-between cursor-pointer hover:bg-stone-800" download>
+    <main class="w-screen h-screen flex justify-center items-center" id="particles">
+      <img src="./src/moon.svg" alt="theme" class="cursor-pointer absolute h-9 w-9 top-5 right-5" id="theme-switcher">
+      <div class="bg-img-light block dark:hidden w-screen h-screen absolute -z-10"></div>
+      <div class="bg-img-dark hidden dark:block w-screen h-screen absolute -z-10"></div>
+      <div class="flex flex-col gap-6 items-center justify-center sm:bg-[#ffffff00] max-w-min px-20 py-16 rounded-4xl border sm:border-[#ffffff70] border-transparent backdrop-blur-none drop-shadow-none sm:backdrop-blur-xl sm:drop-shadow-lg">
+        <h1 class="text-zinc-100 sm:text-7xl text-5xl font-black font-cursive dark:font-normal">СУММАРАЙЗЕР</h1>
+        <span class="text-zinc-100 text-xl mb-7 font-mono text-center mx-5">Программа для анализа и выявления терминов в тексте, на PySide6</span>
+        <a href="https://github.com/PoweredDeveloper/Summarizer/releases/download/New/summarizer-setup.exe" class="px-7 py-3 font-sans bg-zinc-100 rounded-3xl text-stone-900 font-semibold text-xl flex flex-col items-center justify-between cursor-pointer hover:bg-zinc-200" download>
           <span>Скачать</span>
-          <span class="text-sm text-stone-400 font-normal italic">./summarizer-setup.exe  (56.04 MB)</span>
+          <span class="text-sm text-stone-400 font-sans italic">./summarizer-setup.exe  (56.04 MB)</span>
         </a>
       </div>
     </main>
-    <a class="absolute bottom-2.5 cursor-pointer text-stone-500 underline text-center w-screen" href="https://github.com/PoweredDeveloper/Summarizer">
+    <a class="absolute bottom-2.5 cursor-pointer text-white font-semibold underline text-center w-screen" href="https://github.com/PoweredDeveloper/Summarizer">
       Summarizer Github (PoweredDeveloper)
     </a>
   </body>
+  <script src="./src/main.js"></script>
 </html>

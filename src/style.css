@@ -1,6 +1,23 @@
-@import url('https://fonts.googleapis.com/css2?family=Meow+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Shafarik&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap');
 @import "tailwindcss";
 
+@custom-variant dark (&:where(.dark, .dark *));
+
 @theme {
-    --font-cursive: "Meow Script", serif;
+    --font-cursive: "Shafarik", serif;
+    --font-normal: 'Rubik Mono One', serif;
+}
+
+@layer components {
+    .bg-img-light {
+        background-image: url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.pinimg.com%2Foriginals%2Fa7%2Fb0%2Fc5%2Fa7b0c52a99df98134a96406b61bdce51.jpg&f=1&nofb=1&ipt=7864975e08f245abc1bf02f2b96771b92bfa889f2d6ced60b41e652f39464e37&ipo=images');
+        @apply bg-cover bg-center
+    }
+
+    .bg-img-dark {
+        background-image: url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fhdqwalls.com%2Fwallpapers%2Fdigital-art-abstract-black-lines-minimalism-5k-q3.jpg&f=1&nofb=1&ipt=62d087c2b66d7ad014df909704d18b8919bf1ee2e34b4c374f2fa0e76cf2a5d8&ipo=images');
+        @apply bg-cover bg-center
+    }
+
 }
