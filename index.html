@@ -13,7 +13,8 @@
       <div class="bg-img-light block dark:hidden w-screen h-screen absolute -z-10"></div>
       <div class="bg-img-dark hidden dark:block w-screen h-screen absolute -z-10"></div>
       <div class="flex flex-col gap-6 items-center justify-center sm:bg-[#ffffff00] max-w-min px-20 py-16 rounded-4xl border sm:border-[#ffffff70] border-transparent backdrop-blur-none drop-shadow-none sm:backdrop-blur-xl sm:drop-shadow-lg">
-        <h1 class="text-zinc-100 sm:text-7xl text-5xl font-black font-cursive dark:font-normal">СУММАРАЙЗЕР</h1>
+        <h1 class="text-zinc-100 block dark:hidden sm:text-7xl text-5xl font-black font-cursive dark:font-normal">СУММАРАЙЗЕР</h1>
+        <h1 class="text-zinc-100 hidden dark:block sm:text-7xl text-5xl font-black font-cursive dark:font-normal">Summarizer</h1>
         <span class="text-zinc-100 text-xl mb-7 font-mono text-center mx-5">Программа для анализа и выявления терминов в тексте, на PySide6</span>
         <a href="https://github.com/PoweredDeveloper/Summarizer/releases/download/New/summarizer-setup.exe" class="px-7 py-3 font-sans bg-zinc-100 rounded-3xl text-stone-900 font-semibold text-xl flex flex-col items-center justify-between cursor-pointer hover:bg-zinc-200" download>
           <span>Скачать</span>
@@ -26,6 +27,7 @@
     </a>
   </body>
   <script>
+    localStorage.theme = 'dark'
     updateTheme()
 
     function updateTheme() {
